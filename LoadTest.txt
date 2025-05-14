@@ -1,0 +1,49 @@
+PS C:\loadtest> loadtest --rps 1000  -c 500 -k http://mywebapploadbalancer-864941368.us-east-1.elb.amazonaws.com/
+(node:19232) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:25292) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:46408) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:39596) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:21136) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:39480) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:24688) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:26952) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+(node:43916) [DEP0060] DeprecationWarning: The `util._extend` API is deprecated. Please use Object.assign() instead.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Requests: 608, requests per second: 121, mean latency: 202.6 ms
+Requests: 609, requests per second: 122, mean latency: 203.3 ms
+Requests: 609, requests per second: 122, mean latency: 199 ms
+Requests: 607, requests per second: 121, mean latency: 204.6 ms
+Requests: 608, requests per second: 122, mean latency: 205.6 ms
+Requests: 607, requests per second: 121, mean latency: 203.6 ms
+Requests: 609, requests per second: 122, mean latency: 202 ms
+Requests: 609, requests per second: 122, mean latency: 201.1 ms
+Requests: 1233, requests per second: 125, mean latency: 142.7 ms
+
+Target URL:          http://mywebapploadbalancer-864941368.us-east-1.elb.amazonaws.com/
+Max time (s):        10
+Target rps:          1000
+Concurrent clients:  459
+Running on cores:    8
+Agent:               keepalive
+
+Completed requests:  9865
+Total errors:        0
+Total time:          10.027 s
+Mean latency:        172 ms
+Effective rps:       984
+
+Percentage of requests served within a certain time
+  50%      143 ms
+  90%      212 ms
+  95%      439 ms
+  99%      592 ms
+ 100%      713 ms (longest request)
+PS C:\loadtest>
